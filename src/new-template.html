@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button onclick="buatTemplate()">
+                buat template baru
+            </button>
+            <section>
+                
+            </section>
+        </div>
+        <template>
+            <div>template yang saya pakai:
+                <span>0</span>
+            </div>
+            <script type="text/javascript">
+                alert('berhasil ditambahkan')
+            </script>
+        </template>
+        <script type="text/javascript">
+            function buatTemplate(){
+                var content = document.querySelector('template').content;
+                var span = content.querySelector('span');
+                span.textContent = parseInt(span.textContent) + 1;
+                document.querySelector('section').appendChild(document.importNode(content,true));
+            }
+        </script>
+    </body>
+</html>

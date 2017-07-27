@@ -1,0 +1,8 @@
+/**
+ * ongis - belajar web components
+ * @author 
+ * @version v1.0.0
+ * @link 
+ * @license ISC
+ */
+{"version":3,"sources":["components/_header.sass","components/_section.sass","components/_footer.sass"],"names":[],"mappings":"AAAA,OACI,yBACA,eAAgB,CAFpB,SAKQ,UAAY,CALpB,eAQQ,YAAa,CAAI,SCPrB,sBACA,eAAgB,CAAI,OCDpB,yBACA,eAAgB,CAAI","file":"../sass/ongis.min.css","sourcesContent":["header {\n    background-color: #3498DB;\n    min-height: 75vh;\n\n    p {\n        color: black; }\n\n    .tinggi {\n        height: 300px; } }\n",".section {\n    background-color: white;\n    min-height: auto; }\n","footer {\n    background-color: #33425B;\n    min-height: 25vh; }\n"]}

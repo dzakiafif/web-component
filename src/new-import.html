@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/ongis.min.css">
+        <link rel="import" href="./html/v-header.html">
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+        var element = content.querySelector('header');
+        document.body.appendChild(element.cloneNode(true));
+    </script>
+    </body>
+</html>

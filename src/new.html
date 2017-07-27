@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/ongis.min.css">
+    </head>
+    <body>
+        <p>hai</p>
+        <div class="apem">
+            <p>frontend</p>
+        </div>
+        <template class="aku">
+            <p>asem</p>
+        </template>
+        <script type="text/javascript">
+            var host = document.querySelector('p');
+            var root = host.createShadowRoot();
+            root.textContent = "bukan, saya adalah tag shadow domm!!";
+        </script>
+        <script>
+            var namaTemplate = document.querySelector('.aku');
+            root.appendChild(document.importNode(namaTemplate.content,true));
+        </script>
+        <script type="text/javascript" src="./app/ongis.min.js"></script>
+    </body>
+</html>
